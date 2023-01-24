@@ -1,0 +1,14 @@
+.planets-sec {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+hr {
+  position: absolute;
+  z-index: 0;
+  top: 107px;
+  margin: 0;
+  color: white;
+  border-width: 0.5px;
+}

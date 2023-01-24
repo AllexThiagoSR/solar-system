@@ -37,3 +37,21 @@
   height: 107px;
   width: 144px;
 }
+
+.planet-card {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.planet-img {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.planet-name {
+  margin: 0;
+}
