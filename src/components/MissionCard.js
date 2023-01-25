@@ -1,15 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/MissionCard.css';
+import yearIcon from '../images/yearIcon.png';
+import locIcon from '../images/locationIcon.png';
+import destIcon from '../images/destinationIcon.png';
+import MissionInfos from './MissionInfos';
 
 class MissionCard extends React.Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{ name }</p>
-        <p data-testid="mission-year">{ year }</p>
-        <p data-testid="mission-country">{ country }</p>
-        <p data-testid="mission-destination">{ destination }</p>
+      <div data-testid="mission-card" className="mission-card">
+        <div className="mission-name"><p data-testid="mission-name">{ name }</p></div>
+        <div className="mission-other-infos">
+          <MissionInfos
+            testid="mission-year"
+            iconSrc={ yearIcon }
+            altText="Year icon"
+            info={ year }
+          />
+          <MissionInfos
+            testid="mission-country"
+            iconSrc={ locIcon }
+            altText="Country icon"
+            info={ country }
+          />
+          <MissionInfos
+            testid="mission-destination"
+            iconSrc={ destIcon }
+            altText="Destination icon"
+            info={ destination }
+          />
+        </div>
       </div>
     );
   }

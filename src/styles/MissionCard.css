@@ -1,0 +1,40 @@
+.mission-card {
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 17px;
+  height: 192px;
+  margin: 10px 0;
+  mix-blend-mode: hard-light;
+  width: 496px;
+}
+
+.mission-name {
+  border-bottom: 1px solid white;
+  font-size: 28px;
+  padding: 0 10px;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.mission-other-infos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.mission-other-infos div {
+  align-items: center;
+  display: flex;
+}
+
+.mission-other-infos div p {
+  margin-left: 3px;
+}
+
+.missions-sec {
+  align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 45px 45px;
+}

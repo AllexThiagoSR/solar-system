@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title';
 import MissionCard from './MissionCard';
 import missionsList from '../data/missions';
+import '../styles/Missions.css';
 
 const makeAMissionCard = ({ name, country, year, destination }) => (
   <MissionCard
@@ -16,7 +17,7 @@ const makeAMissionCard = ({ name, country, year, destination }) => (
 class Missions extends React.Component {
   render() {
     return (
-      <div data-testid="missions">
+      <div data-testid="missions" className="missions-container">
         <Title headline="Missões" />
         <section className="missions-sec">
           { missionsList.map(makeAMissionCard) }
